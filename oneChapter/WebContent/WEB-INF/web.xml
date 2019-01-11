@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>oneChapter</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <resource-ref>
+  	<!-- 对所用资源说明 -->
+  	<description>news DataSource</description>
+  	<!-- 制定所引用资源的JNDI名字，与<Resource>元素中的name属性对应 -->
+  	<res-ref-name>jdbc/news</res-ref-name>
+  	<!-- 指定所引用资源的类名字，与<Resource>元素中的type属性对应 -->
+  	<res-type>javax.sql.DataSource</res-type>
+  	<!-- 指定管理所引用的资源的Manager,与<Resource>元素中的auth属性对应 -->
+  	<res-auth>Container</res-auth>
+  </resource-ref>
+</web-app>
